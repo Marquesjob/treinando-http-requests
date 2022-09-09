@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { Curso } from './cursos';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CursosService {
 
-  private readonly URL = 'http://localhost:3000/cursos';
+  private readonly URL = `${environment.API}cursos`;
 
   constructor(private http: HttpClient) { }
 
