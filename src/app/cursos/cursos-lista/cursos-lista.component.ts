@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class CursosListaComponent implements OnInit {
 
-  cursos!: Curso[];
+  // cursos!: Curso[];
   cursos$!: Observable<Curso[]>;
 
   constructor(private service: CursosService) { }
